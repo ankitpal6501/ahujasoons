@@ -1,0 +1,373 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:JostMedium;
+    src: url(../font/Jost500Medium.woff);
+  }
+  @font-face {
+    font-family:JostRegular;
+    src: url(../font/Jost-Regular.woff);
+  }
+  @font-face {
+    font-family:JostSemibold;
+    src: url(../font/Jost-SemiBold.woff);
+  }
+  @font-face {
+    font-family:Jostbold;
+    src: url(../font/Jost-Bold.woff);
+  }
+  @font-face {
+    font-family:PlayfairDisplayRegular;
+    src: url(../font/PlayfairDisplay-Regular.woff);
+  }
+.wrapper{
+    max-width: 1600px;
+    margin: 0% auto;
+}
+.container{
+    width: 100%;
+    font-size: 16px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family:JostMedium;
+}
+.header{  
+    display: flex;
+    flex-direction: column;
+   
+}
+.headermobile{
+    display: none;
+}
+.headertop{
+    font-family:JostRegular;
+    display: flex;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(214, 211, 211);
+    justify-content: space-between;
+}
+.toptags{
+    margin-top: 15px;
+    margin-left: 0%;
+}
+.headerbottom{
+    display: flex;
+    background-color: white;
+    justify-content:space-between;
+}
+.div1{
+    width: 20%;
+}
+.div1 button{
+    width: 110px;
+    height: 40px;
+    font-family:JostSemibold;
+    border: 1px solid rgb(214, 211, 211);
+    background-color: white;
+}
+.div2{
+  width: 80%;
+  position: relative;
+}
+.btn1{
+    border-radius: 18px;
+    height: 25px;
+    width: 100px;
+    background-color: white;
+   
+}
+ .btn2{
+     width: 200px;
+     height: 40px;
+     font-family:JostSemibold;
+     border: 1px solid rgb(214, 211, 211);
+    position: absolute;
+    text-align: left;
+    background-color: white;
+    right: 0%;
+}
+.headertag, .resttag{
+    margin-top: 40px;
+}
+.headertag{
+    margin-left: 40px;
+}
+.searchlogo{
+    margin-top: 40px;
+}
+.searchlogo button{
+    border: none;
+    background-color: white;
+    margin-left:10px;
+    margin-right:10px;
+}
+.header a{
+    color: #303030;
+    padding: 20px;
+    text-decoration: none;
+
+}
+.logo{
+    margin: 15px;
+    margin-left:40px;
+}
+.main{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    
+}
+.mainheader{
+    margin: 20px;
+    margin-right:30px ;
+    margin-left:30px ;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(1,1fr);
+}
+.heading{
+    font-family:PlayfairDisplayRegular;
+    color: #303030;
+    text-align: center;
+    padding-bottom: 10px ;
+
+}
+.heading p{ 
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    font-family:JostRegular;
+}
+.heading h1{ 
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+}
+.mainbody{
+    margin: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% 80%;
+    border-bottom: 1px solid rgb(214, 211, 211);
+}
+.shawltype{
+   margin-right: 20px;
+   margin-left: 10px;
+}
+.selectoption{
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(214, 211, 211);
+}
+.selectoption h3{
+    padding: 0%;
+    font-family:JostSemibold;
+}
+.selectoption img{
+    position: absolute;
+    right: 0%;
+    top: 9px;
+}
+.selectoption input{
+    margin-bottom: 15px;
+    color: #303030;
+}
+.price,.discount{
+    display: flex;
+    position: relative;
+    font-family:JostSemibold;
+    border-bottom: 1px solid rgb(214, 211, 211);
+}
+.price img,.discount img{
+    position: absolute;
+    top: 28px;
+    right: 0;
+}
+/* .shawltype div{
+    padding-bottom: 20px;
+    
+} */
+.sideimages{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+}
+.mainimages{
+    display: flex;
+}
+.mainfooter{
+    margin: 20px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,1fr);
+}
+.datadisplay{
+    color:#0C0C0C;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom:20px ;
+
+}
+.datadisplay div{
+    position: relative;
+}
+.img2{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.footer{
+    font-family:JostRegular;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(1,1fr);
+    background-color: white;
+    
+}
+.topfooter{
+   text-align: center;
+   position: relative;
+}
+
+.topfooter::before{
+    position: absolute;
+    width: 45%;
+    height: 2px;
+    left: 1%;
+    top:50%;
+    content:'';
+    border-top:1px solid rgb(214, 211, 211);
+    border-bottom:1px solid rgb(214, 211, 211);
+}
+.topfooter::after{
+    position: absolute;
+    width: 45%;
+    height: 2px;
+    right: 1%;
+    top:50%;
+    content:'';
+    border-top:1px solid rgb(214, 211, 211);
+    border-bottom:1px solid rgb(214, 211, 211);
+}
+
+
+li{
+    list-style: none;
+    color: #303030;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+/* .bottomfooter{
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5,1fr);
+    margin-right:20px ;
+    margin-left:30px ;
+} */
+.bottomfooter{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right:20px ;
+    margin-left:30px ;
+}
+.footer h3{
+    color:#303030;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 0%;
+}
+.footer h4{
+    color: #303030;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.signup{
+    display: flex;
+    flex-direction: column;
+
+}
+.signup p{
+    font-size: 14px;
+    color: #303030;
+}
+.input1{
+    border-bottom: 1px solid black;
+}
+.input1 input{
+    border: none;
+}
+.input1 label{
+    float: right;
+    font-family:Jostbold;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 860px){
+    .shawltype{
+        display: none;
+    }
+    .div1{
+        display: none; 
+    }
+    .toptags{
+        display: none;
+    }
+
+    .mainbody{
+        margin: 20px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        border-bottom: 1px solid rgb(214, 211, 211);
+    }
+    .headertop{
+        justify-content: center;
+    }
+    .headerbottom{
+        display: none;
+    }
+    .headermobile{
+        display:flex;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .dropbtn{
+        width: 95px;
+        height: 40px;
+        margin: 30px;
+        padding: 10px;
+        background-color: white;
+    }
+    .logo{
+        position: absolute;
+        left: 35%;
+    }
+    .searchlogo{
+        position: absolute;
+        right: 0%;
+    }
+    .div2{
+        width: 100%;
+    }
+}
+@media screen and (max-width:587px) {
+    .logo{
+        position: absolute;
+        left: 20%;
+    }
+}
