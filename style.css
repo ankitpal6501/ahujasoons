@@ -29,6 +29,7 @@ body{
     margin: 0% auto;
 }
 .container{
+    opacity: 1;
     width: 100%;
     font-size: 16px;
     height: auto;
@@ -39,6 +40,7 @@ body{
 .header{  
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 5px 5px hsla(0,0%,77.3%,.47059);
    
 }
 .headermobile{
@@ -51,9 +53,28 @@ body{
     border-bottom: 1px solid rgb(214, 211, 211);
     justify-content: space-between;
 }
+.headertop p{
+   opacity: 1;
+    width: 401px;
+    height: 20px;
+    color: #303030;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.india{
+    height: 10px;
+    width: 20px;
+}
 .toptags{
-    margin-top: 15px;
     margin-left: 0%;
+    padding-top: 5px;
+}
+.toptags a{
+    opacity: 1;
+    width: 401px;
+    height: 20px;
+    color: #303030;
 }
 .headerbottom{
     display: flex;
@@ -63,12 +84,25 @@ body{
 .div1{
     width: 20%;
 }
-.div1 button{
-    width: 110px;
-    height: 40px;
+.btn{
+    position: relative;
+    width: 135px;
+    height: 55px;
     font-family:JostSemibold;
     border: 1px solid rgb(214, 211, 211);
     background-color: white;
+}
+.btn svg{
+    position: absolute;
+    left:0%;
+    top: 30%;
+    margin: 0%;
+}
+.btn p{
+    position: absolute;
+    font-size: 16px;
+    right: 5%;
+    top: 0%;
 }
 .div2{
   width: 80%;
@@ -79,17 +113,20 @@ body{
     height: 25px;
     width: 100px;
     background-color: white;
+    padding: auto;
    
 }
  .btn2{
-     width: 200px;
-     height: 40px;
-     font-family:JostSemibold;
+     width: 250px;
+     height: 55px;
      border: 1px solid rgb(214, 211, 211);
     position: absolute;
-    text-align: left;
     background-color: white;
     right: 0%;
+}
+.btn2 p{
+    font-size: 16px;
+    margin: 10px;
 }
 .headertag, .resttag{
     margin-top: 40px;
@@ -113,13 +150,14 @@ body{
 
 }
 .logo{
+    padding-left: 40px;
     margin: 15px;
     margin-left:40px;
 }
 .main{
     display: flex;
     flex-direction:column;
-    background-color: white;
+    background-color: transparent;
     
 }
 .mainheader{
@@ -131,13 +169,20 @@ body{
     grid-template-columns: repeat(1,1fr);
 }
 .heading{
-    font-family:PlayfairDisplayRegular;
     color: #303030;
     text-align: center;
     padding-bottom: 10px ;
+    margin-bottom: 20px;
 
 }
-.heading p{ 
+.p1{
+    
+    font-family:PlayfairDisplayRegular;
+    font-size: 32px;
+    height: 43px;   
+    margin-bottom: 0%;
+}
+.p2{ 
     font-size: 18px;
     padding: 0;
     margin: 0;
@@ -160,11 +205,15 @@ body{
    margin-left: 10px;
 }
 .selectoption{
+    padding: 0%;
     position: relative;
+    color: #303030;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(214, 211, 211);
 }
-.selectoption h3{
+.selectoption p{
+    width: 131px;
+    height: 23px;
     padding: 0%;
     font-family:JostSemibold;
 }
@@ -174,6 +223,10 @@ body{
     top: 9px;
 }
 .selectoption input{
+    margin: 0%;
+    width: 25px;
+    height: 22px;
+    margin-right: 10px;
     margin-bottom: 15px;
     color: #303030;
 }
@@ -201,12 +254,38 @@ body{
     display: flex;
 }
 .mainfooter{
+    position: relative;
+    color: #0C0C0C;
     margin: 20px;
     margin-bottom: 50px;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(3,1fr);
+    display:flex;
+
 }
+.page-btn{
+    position: absolute;
+    left: 40%;
+}
+.clickable{
+    background-color: white;
+    padding: 10px;
+    width: auto;
+    font-size: 16px;
+    border: none;
+    height: 50px;
+}
+#next{
+    background-color: white;
+    font-size: 16px;
+    font-family:JostSemibold;
+    height: 50px;
+    border: 1px solid rgb(214, 211, 211) ;
+}
+/* #next svg{
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    margin-left: 20px;
+} */
 .datadisplay{
     color:#0C0C0C;
     display: flex;
@@ -217,6 +296,7 @@ body{
 }
 .datadisplay div{
     position: relative;
+    margin-bottom: 40px;
 }
 .img2{
     position: absolute;
@@ -288,6 +368,8 @@ li{
 }
 .footer h4{
     color: #303030;
+    margin-top: 50px;
+    font-family:Jostbold;
     margin-bottom: 10px;
     font-size: 14px;
 }
@@ -313,7 +395,13 @@ li{
 .icon{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    margin-bottom: 45px;
+}
+.icon img{
+    margin-right:20px;
+}
+.mobile-footer{
+    display: none;
 }
 
 @media screen and (max-width: 860px){
@@ -326,7 +414,6 @@ li{
     .toptags{
         display: none;
     }
-
     .mainbody{
         margin: 20px;
         display: grid;
@@ -336,6 +423,7 @@ li{
     }
     .headertop{
         justify-content: center;
+        background-color: #9d8b61
     }
     .headerbottom{
         display: none;
@@ -344,19 +432,40 @@ li{
         display:flex;
         flex-direction: row;
         position: relative;
-        margin-bottom: 15px;
+        margin: 0%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
     }
     .dropbtn{
-        width: 95px;
-        height: 40px;
-        margin: 30px;
-        padding: 10px;
+        position: absolute;
+        left: 0%;
+        top: 50%;
+        width: auto;
+        height: auto;
+        margin: 0%;
         background-color: white;
+        border: none;
+        padding: 0%;
     }
     .logo{
-        position: absolute;
-        left: 35%;
+        padding: 0%;
+        margin: 0%;
+        margin-left: 45px;
+        margin-top: 30px;
     }
+.india{
+    height: 20px;
+    width: 30px;
+}
+.searchlogo span{
+    font-family:JostRegular;
+    font-size: 20px;
+}
+.searchlogo img{
+    margin-left: 5px;
+    height: 20px;
+    width: 20px;
+}
     .searchlogo{
         position: absolute;
         right: 0%;
@@ -365,9 +474,68 @@ li{
         width: 100%;
     }
 }
-@media screen and (max-width:587px) {
-    .logo{
+@media screen and (max-width:752px) {
+    .bottomfooter{
+        display: none;
+    }
+    .mobile-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .signup h4,.icon,p,.last{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .last{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .input1{
+        margin: 20px;
+        margin-bottom:40px;
+    }
+    .signup h4{
+        font-family:Jostbold;
+        font-size: medium;
+        margin-bottom:20px;
+    }
+   .icon{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        margin-bottom: 20px;
+     }
+     .shop h3,a{
+        margin-left: 20px;
+        font-weight: 400;
+     }
+    .shop{
+        position: relative;
+        border-bottom: 1px solid hsla(0,0%,77.3%,.47059);
+    }
+    .show-data{
+        position: relative;
+    }
+    .mobile-dynamic-icon{
         position: absolute;
-        left: 20%;
+        right: 2%;
+        top: 30%;
+    }
+    .minus{
+        display: none;
+    }
+    .dropdown-content{
+        display: none;
+        flex-direction: column;
+        z-index: 1;
+        min-width: 100%;
+    }
+    /* .show-data:hover .dropdown-content{
+        display: flex;
+    } */
+    .dropdown-content a{
+        padding: 12px 16px 0 0;
+        text-decoration: none;
+        color: #303030;
     }
 }
